@@ -1,0 +1,453 @@
+body {
+    margin: 0 auto;
+    max-width: 1600px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+}
+
+header, main, footer {
+    padding: 1.5rem;
+}
+
+header {
+    background-color: #C6BBBB;
+    font-size: 1.25em;
+    font-weight: 600;
+    grid-area: header;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+    font-size: 11px;
+    padding-left: 0;
+    padding-bottom: 1rem;
+    color: black;
+}
+
+#logo {
+    text-decoration: none;
+    color: #fff;
+    font-style: italic;
+    font-size: 22px;
+}
+
+.icons {
+    color: #fff;
+    margin-top: auto;
+}
+
+.navbar {
+    display: none;
+    font-size: medium;
+}
+
+.responsive {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    top: 40px;
+    width: 100%;
+    list-style: none;
+}
+
+.responsive a {
+    color: rgba(21, 21, 21, 0.706);
+    font-weight: 200;
+    display: inline-block;
+    padding: 1.5rem;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.obs {
+    font-size: 12px;
+    margin-top: 0;
+}
+
+.shop-now-btn {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+    padding: 0.5rem;
+    width: 70px;
+    text-align: center;
+    float: right;
+}
+
+.h2-news {
+    font-size: 15px;
+    margin-top: 4rem;
+}
+
+.h2-header {
+    font-size: 15px;
+}
+
+.h3, .h4, .p {
+    font-size: 10px;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.p {
+    margin-bottom: 2rem;
+}
+
+.h2-header-help {
+    font-size: 20px;
+    margin-top: 2rem;
+}
+
+.h3-header-help {
+    font-size: 16px;
+    margin-top: 3rem;
+}
+
+.p-help {
+    font-size: 15px;
+}
+
+.p-help-2 {
+    font-size: 15px;
+    margin-bottom: 3rem;
+}
+
+.h5 {
+    font-weight: 400;
+}
+
+.h3-related {
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.h3-color {
+    margin-top: 3rem;
+}
+
+main {
+    grid-area: main;
+}
+
+main section img {
+    width: 100%;
+}
+
+.left-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+.nike {
+    text-decoration: none;
+}
+
+.shoe-info {
+    display: inline-block;
+}
+
+.shoe-size {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2rem;
+    margin-left: 1rem;
+}
+
+.product {
+    float: left;
+    width: auto;
+}
+
+.product-shoe {
+    text-decoration: none;
+    color: black;
+}
+
+.product-details {
+    background-color: #f7f7f7;
+    padding: 1rem;
+    margin: 2rem 0;
+    width: 400px;
+}
+
+.product-info {
+    padding-top: 3rem;
+}
+
+.delivery-info {
+    background-color: #f7f7f7;
+    padding: 1rem;
+    margin: 1rem 0;
+    width: 400px;
+}
+
+.safe-trade {
+    display: flex;
+    padding: 1rem;
+    background-color: #f7f7f7;
+    width: 400px;
+}
+
+.offer {
+    display: inline-block;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    text-decoration: none;
+    background-color: #C6BBBB;
+    color: black;
+    border-radius: 5px;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+    font-size: 10px;
+}
+
+.read-more-btn, .sign-up-btn {
+    display: inline-block;
+    padding: 1rem;
+    margin: 0.5rem;
+    text-decoration: none;
+    background-color: #D9D9D9;
+    color: black;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 10px;
+    text-align: center;
+    width: 50%;
+    margin-left: 5rem;
+    margin-top: 0;
+
+}
+
+.black-btn {
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: black;
+    color: #D9D9D9;
+    border-radius: 5px;
+    font-weight: 400;
+    width: 50%;
+    margin: 0.5rem 0;
+}
+
+.grey-btn {
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: #D9D9D9;
+    color: black;
+    border-radius: 5px;
+    font-weight: 400;
+    width: 50%;
+    margin: 0.5rem 0;
+}
+
+.buttons {
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: #D9D9D9;
+    color: black;
+    font-weight: 550;
+    border-radius: 5px;
+    list-style: none;
+    margin: 0.5rem 0;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    margin-left: 5rem;
+}
+
+
+.img {
+    display: inline-block;
+    grid-template-columns: auto auto auto;
+    width: 40%;
+    columns: 1;
+}
+
+.img2 {
+    display: inline-block;
+    grid-template-columns: auto auto auto;
+    width: 25%;
+    padding: 0.5rem;
+
+}
+
+.img3 {
+    display: inline-block;
+    grid-template-columns: auto auto auto;
+    width: 40%;
+    columns: 1;
+}
+
+
+.site-footer {
+    background-color: #C6BBBB;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0 0 0;
+    margin: 0;
+}
+
+.help, .profile, .contact, .terms, .snkr, .social-media {
+    text-decoration: none;
+    list-style: none;
+    padding: 1rem;
+}
+
+.fa-facebook, .fa-instagram {
+    font-weight: 100;
+    font-size: 40px;
+    padding: 0.5rem;
+    display: inline;
+    float: left;
+}
+
+footer ul li a {
+    list-style: none;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    margin-right: 50px;
+    padding: 0.5rem;
+}
+
+@media only screen and (min-width: 600px) {
+    .navbar {
+        display: none;
+        flex-direction: row;
+        gap: 1rem;
+        list-style: none;
+        margin: 0;
+    }
+    /*Ham-meny vil ikke bli synlig i desktop-versjon.*/
+
+    .navigation {
+        display: flex;
+        font-size: medium;
+        text-decoration: none;
+    }
+
+    body {
+        align-items: center;
+    }
+
+    #grid-container {
+        grid-template-areas: "header header header" "main main main" "footer footer footer";
+    }
+
+    .icons {
+        justify-items: right;
+    }
+
+    .h1 {
+        font-size: 40px
+    }
+
+    .shop-now-btn {
+        margin-right: 1rem;
+    }
+
+    .product {
+        float: left;
+        width: 40%;
+        padding-right: 3rem;
+    }
+
+    .product-details {
+        display: inline-block;
+        grid-template-columns: auto;
+        width: 1300px;
+    }
+
+    .shoe-info {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .shoe-size {
+        justify-content: space-between;
+        width: 55%;
+    }
+
+
+    .safe-trade {
+        display: flex;
+        background-color: #f7f7f7;
+        width: 400px;
+    }
+
+    .img {
+        display: inline-block;
+        padding: 1rem;
+        width: 20%;
+    }
+
+    .img2 {
+        display: inline-block;
+        padding: 1rem 0;
+        width: 10%;
+    }
+
+    .img3 {
+        display: inline-block;
+        padding: 1rem;
+        width: 20%;
+    }
+
+    .buttons {
+        padding: 1rem;
+        width: 30%;
+        align-self: center;
+    }
+
+    #medlem-lesmer {
+        display: flex;
+        align-items: center;
+        margin-left: 8rem;
+    }
+
+    .read-more-btn, .sign-up-btn {
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        width: 30%;
+    }
+
+    .site-footer {
+        grid-area: footer;
+    }
+
+}

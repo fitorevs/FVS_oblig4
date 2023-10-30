@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+    <link href="css/font/css/fontawesome.css" rel="stylesheet">
+    <link href="css/font/css/brands.css" rel="stylesheet">
+    <link href="css/font/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Hjelpside for SNKR</title>
+</head>
+<body>
+    <div id="grid-container">
+        <header>
+            <nav>
+                <a href="index.html" id="logo">SNKR.</a>
+                <div class="icons">
+                    <i id="ham" class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-regular fa-user"></i>
+                    <i class="fa-regular fa-heart"></i> 
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+                <ul class="navbar">
+                    <li><a href="#">KVINNER</a></li>
+                    <li><a href="produkt.html">MENN</a></li>
+                    <li><a href="#">BARN</a></li>
+                    <li><a href="#">TILBEHØR</a></li>
+                    <li><a href="#">NYHETER</a></li>
+                    <li><a href="#">MERKER</a></li>
+                    <li><a href="hjelp.html">HJELP</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <ul class="navigation">
+                    <li><a href="#" class="navigation">KVINNER</a></li>
+                    <li><a href="produkt.html" class="navigation">MENN</a></li>
+                    <li><a href="#" class="navigation">BARN</a></li>
+                    <li><a href="#" class="navigation">TILBEHØR</a></li>
+                    <li><a href="#" class="navigation">NYHETER</a></li>
+                    <li><a href="#" class="navigation">MERKER</a></li>
+                    <li><a href="hjelp.html" class="navigation">HJELP</a></li>
+                </ul>
+            </section>
+            <span>
+                <a href="index.html" class="left-btn"><i class="fa-solid fa-arrow-left"></i></a>
+            </span>
+            <article>
+            <h2 class="h2-header-help">Hva kan vi hjelpe deg med?</h2>
+            <p class="p-help-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </article>
+            <section>
+                <section class="delivery-btn">
+                <a href="#" class="buttons">Levering</a>
+                <a href="#" class="buttons">Retur</a>
+                <a href="#" class="buttons">Ofte stilte spørsmål</a>
+                <a href="#" class="buttons">Medlemskap</a>
+                <a href="#" class="buttons">Reklamasjon</a>
+                <a href="#" class="buttons">Betaling</a>
+                <a href="#" class="buttons">Størrelsesguide</a>
+                <a href="#" class="buttons">Vilkår</a>
+                </section>
+            </section>
+            <article>
+                <h3 class="h3-header-help">Fant du ikke det du lette etter?</h3>
+                <p class="p-help">Chat med oss (Man - Fre: 09.00 - 17.00, Lør: 10.00 - 15.00)</p>
+                <p class="p-help">Ring oss +47 22 33 44 55</p>
+                <p class="p-help">Kontaktskjema<p>
+            </article>
+        </main>
+        <footer class="site-footer">
+            <ul class="help">
+                <li><a href="hjelp.html">HJELP</a></li>
+                <li><a href="#">Ofte stilte spørsmål</a></li>
+                <li><a href="#">Retur</a></li>
+                <li><a href="#">Levering</a></li>
+                <li><a href="#">Størrelsesguide</a></li>
+            </ul>
+            <ul class="profile">
+                <li><a href="#">MIN SIDE</a></li>
+                <li><a href="#">Min profil</a></li>
+                <li><a href="#">Medlemskap</a></li>
+                <li><a href="#">Mine bestillinger</a></li>
+                <li><a href="#">Mine returer</a></li>
+            </ul>
+            <ul class="contact">
+                <li><a href="#">KONTAKT OSS</a></li>
+                <li><a href="#">Chat med oss</a></li>
+                <li><a href="#">Ring oss</a></li>
+                <li><a href="#">Kontaktskjema</a></li>
+            </ul>
+            <ul class="terms">
+                <li><a href="#">VILKÅR</a></li>
+                <li><a href="#">Term of use</a></li>
+                <li><a href="#">Term of sale</a></li>
+                <li><a href="#">Privacy policy</a></li>
+            </ul>
+            <ul class="snkr">
+                <li><a href="#">SNKR.</a></li>
+                <li><a href="#">Om oss</a></li>
+                <li><a href="#">Jobbe hos SNKR.</a></li>
+            </ul>
+            <ul class="social-media">
+                <li><a href="#">FØLG OSS</a></li>
+                <li><i class="fa-brands fa-facebook"></i>
+                <li><i class="fa-brands fa-instagram"></i>
+            </ul>
+        </footer>
+    </div>
+    <script>
+        let x = document.querySelector(".navbar")
+        document.getElementById("ham").addEventListener("click", (e) => {
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar"
+            }
+        })
+    </script>
+</body>
+</html>
