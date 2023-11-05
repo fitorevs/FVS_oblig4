@@ -196,7 +196,6 @@ main section img {
     background-color: #f7f7f7;
     padding: 1rem;
     margin: 2rem 0;
-    width: 400px;
 }
 
 .product-info {
@@ -313,7 +312,7 @@ main section img {
 
 
 .site-footer {
-    background-color: #827a7a;
+    background-color: #5e5252;
     color: #fff;
     display: flex;
     flex-wrap: wrap;
@@ -337,12 +336,12 @@ main section img {
 
 footer ul li a {
     list-style: none;
-    font-size: 16px;
     color: #fff;
     text-decoration: none;
     display: flex;
     margin-right: 50px;
     padding: 0.5rem;
+    font-size: 16px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -352,6 +351,7 @@ footer ul li a {
         gap: 1rem;
         list-style: none;
         margin: 0;
+        
     }
     /*Ham-meny vil ikke bli synlig i desktop-versjon.*/
 
@@ -389,7 +389,7 @@ footer ul li a {
 
     .product-details {
         grid-template-columns: auto;
-        width: 1200px;
+        width: 1220px;
     }
 
     .shoe-info {
