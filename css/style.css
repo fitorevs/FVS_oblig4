@@ -10,11 +10,17 @@ body {
     grid-template-areas: "header" "main" "footer";
 }
 
+
+#padding {
+    padding: 1rem;
+}
+
 header, main, footer {
     padding: 1.5rem;
 }
 
 header {
+    /*Endret bakgrunnsfarge*/
     background-color: #827a7a;
     font-size: 1.25em;
     font-weight: 600;
@@ -42,16 +48,23 @@ header nav {
     color: black;
 }
 
+.navbar {
+    z-index: 999;
+}
+
 #logo {
     text-decoration: none;
     color: #fff;
     font-style: italic;
+    /*Øket skriftstørrelse*/
     font-size: 30px;
+
 }
 
 .icons {
     color: #fff;
     margin-top: auto;
+    /*Større fontstørrelse på ikoner i header*/
     font-size: 22px;
 }
 
@@ -80,6 +93,12 @@ header nav {
     text-decoration: none;
 }
 
+.img-size {
+    max-width: 100%;
+    height: auto;
+
+}
+
 h1 {
     font-size: 20px;
     font-weight: 100;
@@ -90,15 +109,26 @@ h1 {
     margin-top: 0;
 }
 
+.img-btn {
+    position: relative;
+    width: 100%;
+}
+
 .shop-now-btn {
+    /*Lagt til "SHOP NOW"-knapp på hovedbildet i forsiden*/
+    position: absolute;
+    bottom: 30px;
+    right: 15px;
     background-color: black;
     color: white;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 13px;
     padding: 0.5rem;
-    width: 70px;
+    height: 15px;
+    width: 100px;
     text-align: center;
     float: right;
+    background-color: rgba(21, 21, 21, 0.800);
 }
 
 .h2-news {
@@ -111,6 +141,7 @@ h1 {
 }
 
 .h3, .h4, .p {
+    /*Øket skriftstørrelse*/
     font-size: 14px;
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
@@ -121,21 +152,26 @@ h1 {
     margin-bottom: 2rem;
 }
 
-.nike {
-    font-size: 25px ;
+/*Lagt h1 for overskrift "nike" og øket skriftstørrelse*/
+.h1-nike {
+    font-size: 25px;
 }
 
-.nike-air-max {
+/*Lagt h2 for overskrift "nike air max" og øket skriftstørrelse*/
+.h2-nike-air-max {
     font-size: 15px;
 }
 
+/*Gjort om h2 til h1*/
 .h1-header-help {
     font-size: 20px;
     margin-top: 2rem;
+    /*Lagt til font-weight*/
     font-weight: bold;
 }
 
-.h3-header-help {
+/*Gjort om h3 til h2*/
+.h2-header-help {
     font-size: 16px;
     margin-top: 3rem;
 }
@@ -174,7 +210,8 @@ main section img {
     display: inline-block;
     text-decoration: none;
     color: black;
-    font-size: 14px;
+    /*Lagt til tekst for ikon og øket skriftstørrelse*/
+    font-size: 16px;
 }
 
 .nike {
@@ -194,7 +231,7 @@ main section img {
 
 .product {
     float: left;
-    width: auto;
+    height: auto;
 }
 
 .product-shoe {
@@ -231,12 +268,14 @@ main section img {
     padding: 1rem 0;
     margin: 1rem 0;
     text-decoration: none;
+    /*Endret bakgrunnsfarge for større kontrast*/
     background-color: #a29999;
     color: black;
     border-radius: 5px;
     font-weight: 400;
     text-align: center;
     width: 100%;
+    /*Øket skriftstørrelse*/
     font-size: 14px;
 }
 
@@ -322,6 +361,7 @@ main section img {
 
 
 .site-footer {
+    /*Endret bakgrunnsfarge for større kontrast*/
     background-color: #5e5252;
     color: #fff;
     display: flex;
@@ -355,15 +395,15 @@ footer ul li a {
 }
 
 @media only screen and (min-width: 600px) {
+    /* Fjernet navbav (kategorier under header) og lagt til i ham-meny. 
     .navbar {
         display: none;
         flex-direction: row;
         gap: 1rem;
         list-style: none;
         margin: 0;
-        
     }
-    /*Ham-meny vil ikke bli synlig i desktop-versjon.*/
+    */
 
     .navigation {
         display: flex;
@@ -377,8 +417,28 @@ footer ul li a {
 
     #grid-container {
         grid-template-areas: "header header header" "main main main" "footer footer footer";
+        /*Lagt til rader og kolonner*/
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
     }
 
+    /*"SHOP NOW"-knapp for hovedbildet på forsiden. Lagt til transparent bakgrunn og øket skriftstørrelse*/
+    .shop-now-btn {
+        position: absolute;
+        bottom: 30px;
+        right: 15px;
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        font-size: 17px;
+        padding: 0.5rem;
+        height: 20px;
+        width: 125px;
+        text-align: center;
+        float: right;
+        background-color: rgba(21, 21, 21, 0.800);
+    }
+    
     .icons {
         justify-items: right;
     }
@@ -391,14 +451,22 @@ footer ul li a {
         margin-right: 1rem;
     }
 
+    /*Bildestørrelse for screenshots i analyse.html*/
+    .img-size {
+        max-width: 50%;
+        max-height: 50%;        
+    }
+
     .product {
         float: left;
         width: 40%;
+        height: auto;
         padding-right: 3rem;
     }
 
     .product-details {
         grid-template-columns: auto;
+        /*Endret vidde*/
         width: 1220px;
     }
 

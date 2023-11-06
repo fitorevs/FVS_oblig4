@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Lagt til meta description-->
     <meta name="description" content="Shop Nike Air Max 90 - Herre - white/hvit for 1849kr hos SNKR. | Gratis frakt over 599kr og fri retur! | Rask levering">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
     <link href="css/font/css/fontawesome.css" rel="stylesheet">
     <link href="css/font/css/brands.css" rel="stylesheet">
     <link href="css/font/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="analyse.html" type>
     <title>Produktside for SNKR</title>
 </head>
 <body>
     <div id="grid-container">
+        <!--header start-->
         <header>
             <nav>
+                <!--Lagt til span rundt logo-->
                 <span>
                     <a href="index.html" id="logo">SNKR.</a>
                 </span>
@@ -34,46 +36,52 @@
                     <li><a href="#">NYHETER</a></li>
                     <li><a href="#">MERKER</a></li>
                     <li><a href="hjelp.html">HJELP</a></li>
+                    <!--Linket til analyse.html-->
+                    <li><a href="analyse.html">ANALYSE</a></li>
                 </ul>
             </nav>
         </header>
+        <!--header slutt-->
+        <!--main start-->
         <main>
             <span>
-                <a href="index.html" class="left-btn"><i class="fa-solid fa-arrow-left"> </i></a>
+                <!--Lagt til tekst for ikon-->
+                <a href="index.html" class="left-btn"><i class="fa-solid fa-arrow-left"></i> HJEM</a>
             </span>
             <section>
                 <h5 class="h5">Hjem / Herresko / Sneakers / Air Max 90</h5>
             </section>
-            <section class="product">
-                <img src="img/air-max-90.webp" alt="Skobilde av Nike Air Max 90"> <!--Kilde: Bilde hentet fra Nike.com: https://www.nike.com/no/en/t/air-max-90-shoes-QKmdVV/FN8005-100-->
+            <section>
+                <img class="product" src="img/air-max-90.webp" alt="Skobilde av Nike Air Max 90"> <!--Kilde: Bilde hentet fra Nike.com: https://www.nike.com/no/en/t/air-max-90-shoes-QKmdVV/FN8005-100-->
             </section>
             <!--Her skal det egentlig ligge bilder av skoen i flere vinkler. Ble mye kluss, og droppet det.-->
             <section class="shoe-info">
                 <article>
-                    <h1 class="nike">Nike</h1>
-                    <h2 class="nike-air-max">Nike Air Max 90</h2>
+                    <!--Gjort om p-tagger til h1 og h2-->
+                    <h1 class="h1-nike">Nike</h1>
+                    <h2 class="h2-nike-air-max">Nike Air Max 90</h2>
                     <p>1849kr</p>
                     <section>
                         <h3 class="h3-color">Farge</h3>
                         <p>WHITE/SILVER</p>
                         <section class="shoe-colors">
                             <section class="img2">
-                                <img src="https://placehold.co/600x400" alt="Skobilde i ulike farger">
+                                <img src="https://placehold.co/400x400" alt="Skobilde i ulike farger">
                             </section>
                             <section class="img2">
-                                <img src="https://placehold.co/600x400" alt="Skobilde i ulike farger">
+                                <img src="https://placehold.co/400x400" alt="Skobilde i ulike farger">
                             </section>
                             <section class="img2">
-                                <img src="https://placehold.co/600x400" alt="Skobilde i ulike farger">
+                                <img src="https://placehold.co/400x400" alt="Skobilde i ulike farger">
                             </section>
                             <section class="img2">
-                                <img src="https://placehold.co/600x400" alt="Skobilde i ulike farger">
+                                <img src="https://placehold.co/400x400" alt="Skobilde i ulike farger">
                             </section>
                             <section class="img2">
-                                <img src="https://placehold.co/600x400" alt="Skobilde i ulike farger">
+                                <img src="https://placehold.co/400x400" alt="Skobilde i ulike farger">
                             </section>
                             <section class="img2">
-                                <img src="https://placehold.co/600x400" alt="Skobilde i ulike farger">
+                                <img src="https://placehold.co/400x400" alt="Skobilde i ulike farger">
                             </section>
                         </section>
                     </section>
@@ -221,6 +229,8 @@
                 </section>
             </section>
         </main>
+        <!--main slutt-->
+        <!--footer start-->
         <footer class="site-footer">
             <ul class="help">
                 <li><a href="hjelp.html">HJELP</a></li>
@@ -259,7 +269,9 @@
                 <li><i class="fa-brands fa-instagram"></i>
             </ul>
         </footer>
+        <!--footer slutt-->
     </div>
+    <!--javacript for navbar-->
     <script>
         let x = document.querySelector(".navbar")
         document.getElementById("ham").addEventListener("click", (e) => {
