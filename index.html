@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Lagt til meta description-->
     <meta name="description" content="Oppdag dine favorittsko fra ledende merker eller utforsk unike stiler hos SNKR. | Gratis frakt over 599kr og fri retur! | Rask levering">
+    <meta name="keywords" content="SNKR, snkr, sko, sneakers, støvletter, damesko, herresko, barnesko, vintersko, høstsko, sommersko, fritidsko, skomote, skobutikk, sko på salg, sko salg, komfortable sko, joggesko, boots, hvite sneakers, hvite sko, svarte sneakers, svarte sko, sorte sko, skopleie, skotilbehør,new balance, ugg, uggs, nike, adidas, vagabond, air max, air force, gazelle, sko tilbud">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
     <link href="css/font/css/fontawesome.css" rel="stylesheet">
     <link href="css/font/css/brands.css" rel="stylesheet">
     <link href="css/font/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <title>Forside for SNKR</title>
+    <title>SNKR. Trendy Shoes Online</title>
 </head>
 <body>
     <div id="grid-container">
@@ -27,14 +28,15 @@
                     <i class="fa-regular fa-heart"></i> 
                     <i class="fa-solid fa-bag-shopping"></i>
                 </div>
-                <ul class="navbar">
+                <!--ARIA-attributt-->
+                <ul class="navbar" role="navigation">
                     <li><a href="#">KVINNER</a></li>
-                    <li><a href="produkt.html">MENN</a></li>
+                    <li tabindex="1"><a href="produkt.html">MENN</a></li>
                     <li><a href="#">BARN</a></li>
                     <li><a href="#">TILBEHØR</a></li>
                     <li><a href="#">NYHETER</a></li>
                     <li><a href="#">MERKER</a></li>
-                    <li><a href="hjelp.html">HJELP</a></li>
+                    <li tabindex="2"><a href="hjelp.html">HJELP</a></li>
                     <!--Linket til analyse.html-->
                     <li><a href="analyse.html">ANALYSE</a></li>
                 </ul>
@@ -42,7 +44,8 @@
         </header>
         <main>
             <section>
-                <ul class="navigation">
+                <!--ARIA-attributt-->
+                <ul class="navigation" role="navigation">
                     <li><a href="#" class="navigation">KVINNER</a></li>
                     <li><a href="produkt.html" class="navigation">MENN</a></li>
                     <li><a href="#" class="navigation">BARN</a></li>

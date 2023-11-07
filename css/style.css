@@ -226,8 +226,12 @@ main section img {
     display: flex;
     justify-content: space-between;
     padding-right: 2rem;
-    margin-left: 1rem;
 }
+
+.choose-size {
+    font-weight: bold;
+}
+
 
 .product {
     float: left;
@@ -394,6 +398,11 @@ footer ul li a {
     font-size: 16px;
 }
 
+/*Tabell*/
+table, th, td {
+    border:1px solid black;
+  }
+
 @media only screen and (min-width: 600px) {
     /* Fjernet navbav (kategorier under header) og lagt til i ham-meny. 
     .navbar {
@@ -453,8 +462,8 @@ footer ul li a {
 
     /*Bildestørrelse for screenshots i analyse.html*/
     .img-size {
-        max-width: 50%;
-        max-height: 50%;        
+        max-width: 30%;
+        max-height: 30%;        
     }
 
     .product {
@@ -476,11 +485,10 @@ footer ul li a {
         gap: 1rem;
     }
 
-    .shoe-size {
+    .shoe-size{
         justify-content: space-between;
         width: 55%;
     }
-
 
     .safe-trade {
         display: flex;
