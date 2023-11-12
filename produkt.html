@@ -3,95 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Lagt til meta description-->
+    <!--Generell metadata start-->
     <meta name="description" content="Shop Nike Air Max 90 - Herre - white/hvit for 1849kr hos SNKR. | Gratis frakt over 599kr og fri retur! | Rask levering">
-    <meta name="keywords" content="SNKR, snkr, sko, sneakers, støvletter, damesko, herresko, barnesko, vintersko, høstsko, sommersko, fritidsko, skomote, skobutikk, sko på salg, sko salg, komfortable sko, joggesko, boots, hvite sneakers, hvite sko, svarte sneakers, svarte sko, sorte sko, skopleie, skotilbehør,new balance, ugg, uggs, nike, adidas, vagabond, air max, air force, gazelle, sko tilbud">
+    <meta name="keywords" content="SNKR, snkr, sko, sneakers, relaterte produkter, lignende produkter, merker, støvletter, damesko, herresko, barnesko, vintersko, 
+        høstsko, sommersko, fritidsko, skomote, skobutikk, sko på salg, sko salg, komfortable sko, joggesko, boots, hvite sneakers, hvite sko, svarte sneakers, svarte sko, 
+        sorte sko, skopleie, skotilbehør,new balance, ugg, uggs, nike, adidas, vagabond, air max, air force, gazelle, sko tilbud">
+    <meta name="author" content="Fitore Victoria Seferaj">
+    <!--Generell metadata slutt-->
+    <!--Facebook metadata start-->
+    <meta property="og:title" content="SNKR Steps: Utforsk Trendy Skodesign">
+    <meta property="og:url" content="https://itstud.hiof.no/~fitorevs/oblig4fvs/produkt.html/">
+    <meta property="og:description" content="Utforsk det siste innen skotrender hos SNKR. Oppdag unike design og trendy sko som lar deg uttrykke din unike stil.">
+    <meta property="og:image:alt" content="img/air-max-90.webp" alt="Skobilde av Nike Air Max 90">
+    <!--Facebook metadata slutt-->
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
     <link href="css/font/css/fontawesome.css" rel="stylesheet">
     <link href="css/font/css/brands.css" rel="stylesheet">
     <link href="css/font/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <title>Produktside for SNKR</title>
+    <title>Kjøp Nike Air Max 90 på SNKR.no</title>
 </head>
 <body>
     <div id="grid-container">
         <!--header start-->
         <header>
-            <nav>
+            <!--Snarvei til hovedinnhold-->
+            <!--ARIA-attributt-->
+            <a href="#main" class="skip" role="link" aria-label="Skip to main content">Skip to main content</a>
+            <!--ARIA-attributt-->
+            <nav role="navigation">
                 <!--Lagt til span rundt logo-->
                 <span>
                     <a href="index.html" id="logo">SNKR.</a>
                 </span>
+                <!--Micro-data-->
+                <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                    <meta itemprop="reviewCount" content="100">
+                    <meta itemprop="ratingValue" content="4.4">
+                    <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/Product">
+                        <meta itemprop="name" content="Air Max 90">
+                        <meta itemprop="brand" content="Nike">
+                        <meta itemprop="image" content="img/air-max-90.webp">
+                        <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <meta itemprop="price" content="1849">
+                            <meta itemprop="priceCurrency" content="NOK">
+                    </div>
+                </div>
                 <div class="icons">
-                    <i id="ham" class="fa-solid fa-bars"></i>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <i class="fa-regular fa-user"></i>
-                    <i class="fa-regular fa-heart"></i> 
-                    <i class="fa-solid fa-bag-shopping"></i>
+                    <!--ARIA-attributt-->
+                    <i id="ham" class="fa-solid fa-bars" role="button" aria-label="Open menu"></i>
+                    <i class="fa-solid fa-magnifying-glass" role="button" aria-label="Search"></i>
+                    <i class="fa-regular fa-user" role="button" aria-label="User"></i>
+                    <i class="fa-regular fa-heart" role="button" aria-label="Favorites"></i> 
+                    <i class="fa-solid fa-bag-shopping" role="button" aria-label="Shopping bag"></i>
                 </div>
                 <ul class="navbar">
-                    <li><a href="#">KVINNER</a></li>
-                    <li><a href="produkt.html">MENN</a></li>
-                    <li><a href="#">BARN</a></li>
-                    <li><a href="#">TILBEHØR</a></li>
-                    <li><a href="#">NYHETER</a></li>
-                    <li><a href="#">MERKER</a></li>
-                    <li><a href="hjelp.html">HJELP</a></li>
+                    <!--ARIA-attributt-->
+                    <li role="menuitem"><a href="#">KVINNER</a></li>
+                    <li role="menuitem"><a href="produkt.html">MENN</a></li>
+                    <li role="menuitem"><a href="#">BARN</a></li>
+                    <li role="menuitem"><a href="#">TILBEHØR</a></li>
+                    <li role="menuitem"><a href="#">NYHETER</a></li>
+                    <li role="menuitem"><a href="#">MERKER</a></li>
+                    <li role="menuitem"><a href="hjelp.html">HJELP</a></li>
                     <!--Linket til analyse.html-->
-                    <li><a href="analyse.html">ANALYSE</a></li>
+                    <li role="menuitem"><a href="analyse.html">ANALYSE</a></li>
                 </ul>
             </nav>
         </header>
         <!--header slutt-->
         <!--main start-->
-        <main>
+        <!--Micro-data-->
+        <main id="main" itemscope itemtype="http://schema.org/Product">
+            <!-- Navmeny ligger nå under ham-meny istedet.
+            <section>
+                <ul class="navigation">
+                    <li><a href="#" class="navigation">KVINNER</a></li>
+                    <li><a href ="produkt.html" class="navigation">MENN</a></li>
+                    <li><a href="#" class="navigation">BARN</a></li>
+                    <li><a href="#" class="navigation">TILBEHØR</a></li>
+                    <li><a href="#" class="navigation">NYHETER</a></li>
+                    <li><a href="#" class="navigation">MERKER</a></li>
+                    <li><a href="hjelp.html" class="navigation">HJELP</a></li>
+                </ul>
+            </section>
+            -->
             <span>
                 <!--Lagt til tekst for ikon-->
-                <a href="index.html" class="left-btn"><i class="fa-solid fa-arrow-left"></i> HJEM</a>
+                <!--ARIA-attributt-->
+                <a href="index.html" class="left-btn"><i class="fa-solid fa-arrow-left" aria-label="Hjem-knapp"></i> HJEM</a>
             </span>
-            <section>
-                <h5 class="h5">Hjem / Herresko / Sneakers / Air Max 90</h5>
+            <!--Micro-data-->
+            <section id="breadcrumbs">
+                <ul itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a itemprop="item" href="index.html">
+                            <span itemprop="name">Hjem /
+                        </a>
+                        <meta itemprop="position" content="1">
+                    </li>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a itemprop="item" href="produkt.html">
+                            <span itemprop="name">Herresko /
+                        </a>
+                        <meta itemprop="position" content="2">
+                    </li>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a itemprop="item" href="produkt.html">
+                            <span itemprop="name">Sneakers /
+                        </a>
+                        <meta itemprop="position" content="3">
+                    </li>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a itemprop="item" href="produkt.html">
+                            <span itemprop="name">Nike Air Max 90 
+                        </a>
+                        <meta itemprop="position" content="4">
+                    </li>
+                </ul>
             </section>
+            <!-- Gjort om til brødsmule-navigasjon, som vist over
             <section>
-                <img class="product" src="img/air-max-90.webp" alt="Skobilde av Nike Air Max 90"> <!--Kilde: Bilde hentet fra Nike.com: https://www.nike.com/no/en/t/air-max-90-shoes-QKmdVV/FN8005-100-->
+                <p class="breadcrumb">Hjem / Herresko / Sneakers / Air Max 90</p>
+            </section>
+             -->
+            <section>
+                <!--Micro-data-->
+                <img class="product" src="img/air-max-90.webp" alt="Skobilde av Nike Air Max 90" id="product-img" itemprop="image"> <!--Kilde: Bilde hentet fra Nike.com: https://www.nike.com/no/en/t/air-max-90-shoes-QKmdVV/FN8005-100-->
             </section>
             <!--Her skal det egentlig ligge bilder av skoen i flere vinkler. Ble mye kluss, og droppet det.-->
             <section class="shoe-info">
                 <article>
-                    <!--Gjort om p-tagger til h1 og h2-->
+                        <!--Gjort om p-tagger til h1 og h2-->
                     <h1 class="h1-nike">Nike</h1>
-                    <h2 class="h2-nike-air-max">Nike Air Max 90</h2>
-                    <p>1849kr</p>
+                    <h2 itemprop="name" class="h2-nike-air-max">Nike Air Max 90</h2>
+                    <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                        <meta itemprop="reviewCount" content="100">
+                        <meta itemprop="ratingValue" content="4.4">
+                        <meta itemprop="itemReviewed" content="Nike Air Max 90">
+                    </div>
+                    <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                        <meta itemprop="priceCurrency" content="NOK">
+                        <span itemprop=price content="1849.00">1849 kr</span>
+                    </div>
                     <section>
-                        <h3 class="h3-color">Farge</h3>
-                        <p>WHITE/SILVER</p>
-                        <section class="shoe-colors">
-                            <section class="img2">
-                                <img src="https://placehold.co/400x400" alt="Skobilde i ulike farger">
-                            </section>
-                            <section class="img2">
-                                <img src="https://placehold.co/400x400" alt="Skobilde i ulike farger">
-                            </section>
-                            <section class="img2">
-                                <img src="https://placehold.co/400x400" alt="Skobilde i ulike farger">
-                            </section>
-                            <section class="img2">
-                                <img src="https://placehold.co/400x400" alt="Skobilde i ulike farger">
-                            </section>
-                            <section class="img2">
-                                <img src="https://placehold.co/400x400" alt="Skobilde i ulike farger">
-                            </section>
-                            <section class="img2">
-                                <img src="https://placehold.co/400x400" alt="Skobilde i ulike farger">
-                            </section>
+                    <h3 class="h3-color">Farge</h3>
+                    <p>WHITE/SILVER</p>
+                    <section class="shoe-colors">
+                        <section class="img2">
+                            <img src="https://placehold.co/400x400" alt="Skobilde i ulike farger">
+                        </section>
+                        <section class="img2">
+                            <img src="https://placehold.co/400x400" alt="Skobilde i ulike farger">
+                        </section>
+                        <section class="img2">
+                            <img src="https://placehold.co/400x400" alt="Skobilde i ulike farger">
+                        </section>
+                        <section class="img2">
+                            <img src="https://placehold.co/400x400" alt="Skobilde i ulike farger">
+                        </section>
+                        <section class="img2">
+                            <img src="https://placehold.co/400x400" alt="Skobilde i ulike farger">
+                        </section>
+                        <section class="img2">
+                            <img src="https://placehold.co/400x400" alt="Skobilde i ulike farger">
                         </section>
                     </section>
-                    <section class="shoe-size">
-                        <p class="choose-size">Velg størrelse (EU)</p> 
-                        <p>Størrelsesguide</p>
-                        <p>Størrelser (US)</p>
-                    </section>
-                    <!--Lagt til skostørrelse-knapp-->
+                </section>
+                <section class="shoe-size">
+                    <p class="choose-size">Velg størrelse (EU)</p> 
+                    <p>Størrelsesguide</p>
+                    <p>Størrelser (US)</p>
+                <!--Lagt til skostørrelse-knapp-->
+                <!--ARIA-attributt-->
+                </section>
+                <section>
                     <form class="size">
                         <label for="size">Size:</label>
                         <select name="size" id="size">
@@ -103,26 +189,34 @@
                             <option value="45" itemprop="size">45</option>
                         </select>
                     </form>
-                    <section>
+                </section>
+                <section>
+                    <button type="button" class="black-btn"><i class="fa-solid fa-bag-shopping"></i> LEGG I HANDLEKURVEN</button>
+                    <button type="button" class="grey-btn"><i class="fa-regular fa-heart"></i> LAGRE I FAVORITTER</button>
+                        <!--Brukt button-tag i stedet, som vist over
                         <span>
                             <a href="#" class="black-btn"><i class="fa-solid fa-bag-shopping"></i> LEGG I HANDLEKURVEN</a>
                         </span>
                         <span>
                             <a href="#" class="grey-btn"><i class="fa-regular fa-heart"></i> LAGRE I FAVORITTER</a>
-                        </span>
-                    </section>
-                    <section class="delivery-info">
-                        <p>Gratis frakt over 599 kr</p>
-                        <p>Fri retur</p>
-                        <p>Levering 3-5 virkedager</p>
-                    </section>
-                    <section class="safe-trade">
-                        <h3>Always safe trade</h3>
-                        <img src="img/secure-payment.png" alt="Ikoner av betalingsmetoder"> <!--Kilde: Bilde hentet fra Tiger LRM: https://www.tigerlrm.com/solutions/sales-enablement-software/integrations/stripe-integration-->
-                    </section>
+                        </span>-->
+                </section>
+                <!--ARIA-attributt-->
+                <section class="delivery-info" aria-label="Leveringsinformasjon">
+                    <p>Gratis frakt over 599 kr</p>
+                    <p>Fri retur</p>
+                    <p>Levering 3-5 virkedager</p>
+                </section>
+                <!--ARIA-attributt-->
+                <section class="safe-trade" aria-label="Sikker betalingsmetoder">
+                    <h3>Always safe trade</h3>
+                        <!--ARIA-attributt-->
+                        <img src="img/secure-payment.png" alt="Ikoner av betalingsmetoder" aria-label="Master Card, Visa, American Express, Discover">  <!--Kilde: Bilde hentet fra Tiger LRM: https://www.tigerlrm.com/solutions/sales-enablement-software/integrations/stripe-integration-->
+                </section>
                 </article>
             </section>
-            <section class="product-details">
+            <!--ARIA-attributt-->
+            <section class="product-details" aria-label="Produktdetaljer">
                 <h3>Produktinformasjon</h3>
                 <article>
                     <h4>Produktdetaljer</h4>
@@ -132,12 +226,14 @@
                     <p>Kategori:</p>
                     <p>Hælhøyde:</p>
                 </article>
-                <article class="product-info">
+                <!--ARIA-attributt-->
+                <article class="product-info" aria-label="Produktinformasjon">
                     <h4>Materiale & vedlikehold</h4>
                     <p>Materiale: 70% 30%</p>
                     <p>Flats elegant pointed toe design cut-out sides luxe leather lining versatile shoe must-have new season glamorous.</p>
                 </article>
-                <article class="product-info">
+                <!--ARIA-attributt-->
+                <article class="product-info" aria-label="Produktinformasjon">
                     <h4>Om merket</h4>
                     <p>Effortless comfortable full leather lining eye-catching unique detail to the toe low 'cut-away' sides clean and sleek. Bow detail metallic eyelets leather lining luxurious finish classic courts formal slingback square toe contrasting cap. Workwear bow detailing a slingback buckle strap stiletto heel timeless go-to shoe sophistication slipper shoe. Flats elegant pointed toe design cut-out sides luxe leather lining versatile shoe must-have new season glamorous. Bow detail metallic eyelets leather lining luxurious finish classic courts formal slingback square toe contrasting cap.</p>
                 </article>
@@ -244,7 +340,8 @@
         </main>
         <!--main slutt-->
         <!--footer start-->
-        <footer class="site-footer">
+        <!--ARIA-attributt-->
+        <footer class="site-footer" role="contentinfo">
             <ul class="help">
                 <li><a href="hjelp.html">HJELP</a></li>
                 <li><a href="#">Ofte stilte spørsmål</a></li>
@@ -278,8 +375,9 @@
             </ul>
             <ul class="social-media">
                 <li><a href="#">FØLG OSS</a></li>
-                <li><i class="fa-brands fa-facebook"></i>
-                <li><i class="fa-brands fa-instagram"></i>
+                <!--ARIA-attributt-->
+                <li><i class="fa-brands fa-facebook" aria-label="Facebook"></i>
+                <li><i class="fa-brands fa-instagram" aria-label="Instagram"></i>
             </ul>
         </footer>
         <!--footer slutt-->

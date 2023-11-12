@@ -185,9 +185,25 @@ h1 {
     margin-bottom: 3rem;
 }
 
-.h5 {
-    font-weight: 400;
+/*Lagt til brødsmule-navigasjon*/
+#breadcrumbs {
+    width: 100%;
 }
+
+/*Lagt til brødsmule-navigasjon*/
+#breadcrumbs ul{
+    display: flex;
+    list-style: none;
+    gap: 0.2rem;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
 
 .h3-related {
     padding: 0.5rem;
@@ -204,6 +220,21 @@ main {
 
 main section img {
     width: 100%;
+}
+
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+.skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
 }
 
 .left-btn {
@@ -260,6 +291,7 @@ main section img {
     width: 400px;
 }
 
+
 .safe-trade {
     display: flex;
     padding: 1rem;
@@ -308,8 +340,9 @@ main section img {
     color: #D9D9D9;
     border-radius: 5px;
     font-weight: 400;
-    width: 50%;
+    width: 60%;
     margin: 0.5rem 0;
+    
 }
 
 .grey-btn {
@@ -320,7 +353,7 @@ main section img {
     color: black;
     border-radius: 5px;
     font-weight: 400;
-    width: 50%;
+    width: 60%;
     margin: 0.5rem 0;
 }
 
@@ -401,7 +434,7 @@ footer ul li a {
 /*Tabell*/
 table, th, td {
     border:1px solid black;
-  }
+}
 
 @media only screen and (min-width: 600px) {
     /* Fjernet navbav (kategorier under header) og lagt til i ham-meny. 
@@ -485,6 +518,11 @@ table, th, td {
         gap: 1rem;
     }
 
+    .black-btn, .grey-btn {
+        display: flex;
+        width: 300px;
+    }
+
     .shoe-size{
         justify-content: space-between;
         width: 55%;
@@ -536,5 +574,4 @@ table, th, td {
     .site-footer {
         grid-area: footer;
     }
-
 }

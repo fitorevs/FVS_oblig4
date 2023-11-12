@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Lagt til meta description-->
+    <!--Generell metadata start-->
     <meta name="description" content="Oppdag dine favorittsko fra ledende merker eller utforsk unike stiler hos SNKR. | Gratis frakt over 599kr og fri retur! | Rask levering">
-    <meta name="keywords" content="SNKR, snkr, sko, sneakers, støvletter, damesko, herresko, barnesko, vintersko, høstsko, sommersko, fritidsko, skomote, skobutikk, sko på salg, sko salg, komfortable sko, joggesko, boots, hvite sneakers, hvite sko, svarte sneakers, svarte sko, sorte sko, skopleie, skotilbehør,new balance, ugg, uggs, nike, adidas, vagabond, air max, air force, gazelle, sko tilbud">
+    <meta name="keywords" content="SNKR, snkr, sko, sneakers, relaterte produkter, lignende produkter, merker, støvletter, damesko, herresko, barnesko, vintersko, høstsko, 
+        sommersko, fritidsko, skomote, skobutikk, sko på salg, sko salg, komfortable sko, joggesko, boots, hvite sneakers, hvite sko, svarte sneakers, svarte sko, sorte sko, skopleie, 
+        skotilbehør,new balance, ugg, uggs, nike, adidas, vagabond, air max, air force, gazelle, sko tilbud">
+    <meta name="author" content="Fitore Victoria Seferaj">
+    <!--Generell metadata slutt-->
+    <!--Facebook metadata start-->
+    <meta property="og:title" content="SNKR Steps: Utforsk Trendy Skodesign">
+    <meta property="og:url" content="https://itstud.hiof.no/~fitorevs/oblig4fvs/produkt.html/">
+    <meta property="og:description" content="Utforsk det siste innen skotrender hos SNKR. Oppdag unike design og trendy sko som lar deg uttrykke din unike stil.">
+    <meta property="og:image:alt" content="img/feet-1840619_1280.jpg" alt="Hvite joggesko">
+    <!--Facebook metadata slutt-->
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
     <link href="css/font/css/fontawesome.css" rel="stylesheet">
     <link href="css/font/css/brands.css" rel="stylesheet">
@@ -15,37 +25,45 @@
 </head>
 <body>
     <div id="grid-container">
+        <!--header start-->
         <header>
-            <nav>
+            <!--Snarvei til hovedinnhold-->
+            <!--ARIA-attributt-->
+            <a href="#main" class="skip" role="link" aria-label="Skip to main content">Skip to main content</a> 
+            <!--ARIA-attributt-->
+            <nav role="navigation"> 
                 <!--Lagt til span rundt logo-->
                 <span>
                     <a href="index.html" id="logo">SNKR.</a>
                 </span>
                 <div class="icons">
-                    <i id="ham" class="fa-solid fa-bars"></i>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <i class="fa-regular fa-user"></i>
-                    <i class="fa-regular fa-heart"></i> 
-                    <i class="fa-solid fa-bag-shopping"></i>
+                    <!--ARIA-attributt-->
+                    <i id="ham" class="fa-solid fa-bars" role="button" aria-label="Open menu"></i>
+                    <i class="fa-solid fa-magnifying-glass" role="button" aria-label="Search"></i>
+                    <i class="fa-regular fa-user" role="button" aria-label="User"></i>
+                    <i class="fa-regular fa-heart" role="button" aria-label="Favorites"></i> 
+                    <i class="fa-solid fa-bag-shopping" role="button" aria-label="Shopping bag"></i>
                 </div>
-                <!--ARIA-attributt-->
-                <ul class="navbar" role="navigation">
-                    <li><a href="#">KVINNER</a></li>
-                    <li tabindex="1"><a href="produkt.html">MENN</a></li>
-                    <li><a href="#">BARN</a></li>
-                    <li><a href="#">TILBEHØR</a></li>
-                    <li><a href="#">NYHETER</a></li>
-                    <li><a href="#">MERKER</a></li>
-                    <li tabindex="2"><a href="hjelp.html">HJELP</a></li>
+                <ul class="navbar">
+                    <!--ARIA-attributt-->
+                    <li role="menuitem"><a href="#">KVINNER</a></li>
+                    <li role="menuitem"><a href="produkt.html">MENN</a></li>
+                    <li role="menuitem"><a href="#">BARN</a></li>
+                    <li role="menuitem"><a href="#">TILBEHØR</a></li>
+                    <li role="menuitem"><a href="#">NYHETER</a></li>
+                    <li role="menuitem"><a href="#">MERKER</a></li>
+                    <li role="menuitem"><a href="hjelp.html">HJELP</a></li>
                     <!--Linket til analyse.html-->
-                    <li><a href="analyse.html">ANALYSE</a></li>
+                    <li role="menuitem"><a href="analyse.html">ANALYSE</a></li>
                 </ul>
             </nav>
         </header>
-        <main>
-            <section>
-                <!--ARIA-attributt-->
-                <ul class="navigation" role="navigation">
+        <!--header slutt-->
+        <!--main start-->
+        <!--ARIA-attributt-->
+        <main id="main" role="main">
+            <section role="navigation" aria-label="Site navigation">
+                <ul class="navigation">
                     <li><a href="#" class="navigation">KVINNER</a></li>
                     <li><a href="produkt.html" class="navigation">MENN</a></li>
                     <li><a href="#" class="navigation">BARN</a></li>
@@ -57,8 +75,9 @@
             </section>
             <!--Lagt til "SHOP NOW"-knapp på bildet: img/feet-1840619_1280.jpg-->
             <section class="img-btn">
-                <h1 class="h1">Akkurat nå: 30% på utvalgte sko*</h1>
-                <img src="img/feet-1840619_1280.jpg" alt="Hvite joggesko"> <!--Kilde: Bildet er tatt av Pexels fra Pixabay-->
+                <!--ARIA-attributt-->
+                <h1 class="h1" id="promo-heading">Akkurat nå: 30% på utvalgte sko*</h1>
+                <img src="img/feet-1840619_1280.jpg" alt="Hvite joggesko" aria-labelledby="promo-heading"> <!--Kilde: Bildet er tatt av Pexels fra Pixabay-->
                 <p class="obs">*Gjelder kun utvalgte merkevarer.</p>
                 <a href="produkt.html" class="shop-now-btn">SHOP NOW</a>
             </section>
@@ -176,20 +195,24 @@
                             <img src="img/nike-logo.jpg" alt="Nike-logo"> <!--Freebie Supply (u.å) Nike Logo PNG Transparent [Logo] Hentet 26.09.2023: https://freebiesupply.com/logos/nike-logo/ -->
                         </section>
                         <section class="img3">
-                            <img src="img/New_Balance-logo-F34722CB97-seeklogo.com.png" alt="New Balance-logo">
+                            <img src="img/New_Balance-logo-F34722CB97-seeklogo.com.png" alt="New Balance-logo"> 
                         </section>
                 </section>
-            <section class="offer">
+            <!--ARIA-attributt-->  
+            <section class="offer" aria-label="Bli medlem-seksjon">
                 <h3>Få 20% rabatt på din favorittvare*</h3>
                 <p>*Medlemmer får 20% rabatt på en valgfri ordinær vare. Gjelder kun én gang.</p>
                 <p>Tilbudet kan ikke kombineres med andre rabattkoder.</p>
             </section>
-            <section id="medlem-lesmer">
+            <section id="medlem-lesmer" aria-label="Bli medlem og les mer knapper">
                 <a href="#" class="sign-up-btn">BLI MEDLEM</a>
                 <a href="#" class="read-more-btn">LES MER</a>
             </section>
         </main>
-        <footer class="site-footer">
+        <!--main slutt-->
+        <!--footer start-->
+        <!--ARIA-attributt-->
+        <footer class="site-footer" role="contentinfo">
             <ul class="help">
                 <li><a href="hjelp.html">HJELP</a></li>
                 <li><a href="#">Ofte stilte spørsmål</a></li>
@@ -223,11 +246,14 @@
             </ul>
             <ul class="social-media">
                 <li><a href="#">FØLG OSS</a></li>
-                <li><i class="fa-brands fa-facebook"></i>
-                <li><i class="fa-brands fa-instagram"></i>
+                <!--ARIA-attributt-->
+                <li><i class="fa-brands fa-facebook" aria-label="Facebook"></i>
+                <li><i class="fa-brands fa-instagram" aria-label="Instagram"></i>
             </ul>
         </footer>
+        <!--footer slutt-->
     </div>
+    <!--javascript for navbar-->
     <script>
         let x = document.querySelector(".navbar")
         document.getElementById("ham").addEventListener("click", (e) => {
