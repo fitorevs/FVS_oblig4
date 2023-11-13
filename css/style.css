@@ -106,7 +106,8 @@ h1 {
 
 .h1-analyse {
     font-size: 30px;
-    color: red;
+    color: #5e5252;
+    font-weight: bold;
 }
 
 .obs {
